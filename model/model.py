@@ -1,3 +1,5 @@
+from typing import Union
+
 import torch
 import torch.nn as nn
 from transformers import AutoModelForCausalLM, BitsAndBytesConfig, AutoTokenizer
@@ -104,7 +106,7 @@ class LoRAFTModel(nn.Module):
         tokenized_dataset.set_format(type='torch', columns=['input_ids', 'attention_mask', 'labels'])
         return tokenized_dataset
 
-    def re_tokenize(self, batch_idx: torch.Tensor) -> list:
+    def re_tokenize(self, batch_idx: Union[list, torch.Tensor]) -> list:
         if isinstance(batch_idx, torch.Tensor):
             batch_idx = batch_idx.tolist()
         return self.tokenizer.batch_decode(batch_idx, skip_special_tokens=True)
