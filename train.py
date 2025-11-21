@@ -118,7 +118,7 @@ def train():
 
     # Initialize Trainer
     trainer = Trainer(
-        model=model,
+        model=model.get_model(),
         args=training_args,
         train_dataset=train_dataset,
         eval_dataset=val_dataset,
@@ -129,7 +129,7 @@ def train():
     trainer.train()
 
     # Save the final model
-    model.save_model("./final-model-qwen3-med-lora")
+    model.save_pretrained("./final-model-qwen3-med-lora")
 
     # Plot training and evaluation curves
     plot_train_eval_curves(collect_metrics_cb.train_losses, collect_metrics_cb.eval_losses)

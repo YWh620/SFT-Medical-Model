@@ -59,8 +59,11 @@ class LoRAFTModel(nn.Module):
     def generate(self, *args, **kwargs):
         return self.model.generate(*args, **kwargs)
 
-    def save_model(self, save_directory: str, **kwargs):
+    def save_pretrained(self, save_directory: str, **kwargs):
         self.model.save_pretrained(save_directory, **kwargs)
+
+    def get_model(self):
+        return self.model
 
     @classmethod
     def from_pretrained(cls, pretrained_model_name_or_path, lora_config: LoraConfig = None,
