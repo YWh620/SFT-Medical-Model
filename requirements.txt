@@ -1,8 +1,8 @@
 torch==2.9.1
-transformers==4.46.1
+transformers==4.57.1
 datasets
 peft
 bitsandbytes
-flash-attn
+accelerate
 wandb
 matplotlib

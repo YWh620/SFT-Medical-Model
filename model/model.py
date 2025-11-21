@@ -21,20 +21,16 @@ class LoRAFTModel(nn.Module):
                 pretrained_model_name_or_path,
                 quantization_config=quantization_config,
                 device_map='cuda' if torch.cuda.is_available() else 'cpu',
-                gradient_checkpointing=True,
-                gradient_checkpointing_kwargs={'use_reentrant': False},
                 use_cache=False
             )
         else:
             base_model = AutoModelForCausalLM.from_pretrained(
                 pretrained_model_name_or_path,
                 device_map='cuda' if torch.cuda.is_available() else 'cpu',
-                gradient_checkpointing=True,
-                gradient_checkpointing_kwargs={'use_reentrant': False},
                 use_cache=False
             )
         base_model = prepare_model_for_kbit_training(base_model)
-
+        base_model.gradient_checkpointing_enable({'use_reentrant': False})
         if lora_dir is not None:
             # Load existing LoRA model
             p = Path(lora_dir)
