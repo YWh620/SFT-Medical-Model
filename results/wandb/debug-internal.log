@@ -1,0 +1,16 @@
+{"time":"2025-11-21T19:54:10.537965488+08:00","level":"INFO","msg":"stream: starting","core version":"0.23.0"}
+{"time":"2025-11-21T19:54:16.320758833+08:00","level":"INFO","msg":"stream: created new stream","id":"zv3n0g0g"}
+{"time":"2025-11-21T19:54:16.320873327+08:00","level":"INFO","msg":"handler: started","stream_id":"zv3n0g0g"}
+{"time":"2025-11-21T19:54:16.321040099+08:00","level":"INFO","msg":"stream: started","id":"zv3n0g0g"}
+{"time":"2025-11-21T19:54:16.321082581+08:00","level":"INFO","msg":"writer: started","stream_id":"zv3n0g0g"}
+{"time":"2025-11-21T19:54:16.321076389+08:00","level":"INFO","msg":"sender: started","stream_id":"zv3n0g0g"}
+{"time":"2025-11-21T20:54:35.730576131+08:00","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":14571}
+{"time":"2025-11-21T20:54:37.434166127+08:00","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":9}
+{"time":"2025-11-21T21:15:53.063663945+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/YWh620/lora-fine-tuning/zv3n0g0g/file_stream\": unexpected EOF"}
+{"time":"2025-11-21T22:55:38.902904037+08:00","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":44546}
+{"time":"2025-11-21T22:55:39.153065165+08:00","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":3}
+{"time":"2025-11-21T23:04:41.772117641+08:00","level":"INFO","msg":"stream: closing","id":"zv3n0g0g"}
+{"time":"2025-11-21T23:04:46.164293002+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-21T23:04:57.474784991+08:00","level":"INFO","msg":"handler: closed","stream_id":"zv3n0g0g"}
+{"time":"2025-11-21T23:04:57.475005181+08:00","level":"INFO","msg":"sender: closed","stream_id":"zv3n0g0g"}
+{"time":"2025-11-21T23:04:57.475022625+08:00","level":"INFO","msg":"stream: closed","id":"zv3n0g0g"}

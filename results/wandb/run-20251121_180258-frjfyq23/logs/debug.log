@@ -1,0 +1,88 @@
+2025-11-21 18:02:58,461 INFO    MainThread:6733 [wandb_setup.py:_flush():80] Current SDK version is 0.23.0
+2025-11-21 18:02:58,461 INFO    MainThread:6733 [wandb_setup.py:_flush():80] Configure stats pid to 6733
+2025-11-21 18:02:58,461 INFO    MainThread:6733 [wandb_setup.py:_flush():80] Loading settings from /root/.config/wandb/settings
+2025-11-21 18:02:58,461 INFO    MainThread:6733 [wandb_setup.py:_flush():80] Loading settings from /root/autodl-tmp/qwen3-48-lora/wandb/settings
+2025-11-21 18:02:58,462 INFO    MainThread:6733 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-11-21 18:02:58,462 INFO    MainThread:6733 [wandb_init.py:setup_run_log_directory():713] Logging user logs to /root/autodl-tmp/qwen3-48-lora/wandb/run-20251121_180258-frjfyq23/logs/debug.log
+2025-11-21 18:02:58,462 INFO    MainThread:6733 [wandb_init.py:setup_run_log_directory():714] Logging internal logs to /root/autodl-tmp/qwen3-48-lora/wandb/run-20251121_180258-frjfyq23/logs/debug-internal.log
+2025-11-21 18:02:58,462 INFO    MainThread:6733 [wandb_init.py:init():840] calling init triggers
+2025-11-21 18:02:58,462 INFO    MainThread:6733 [wandb_init.py:init():845] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-11-21 18:02:58,462 INFO    MainThread:6733 [wandb_init.py:init():888] starting backend
+2025-11-21 18:02:58,737 INFO    MainThread:6733 [wandb_init.py:init():891] sending inform_init request
+2025-11-21 18:02:58,742 INFO    MainThread:6733 [wandb_init.py:init():899] backend started and connected
+2025-11-21 18:02:58,744 INFO    MainThread:6733 [wandb_init.py:init():969] updated telemetry
+2025-11-21 18:02:58,745 INFO    MainThread:6733 [wandb_init.py:init():993] communicating run to backend with 90.0 second timeout
+2025-11-21 18:03:00,017 INFO    MainThread:6733 [wandb_init.py:init():1040] starting run threads in backend
+2025-11-21 18:03:00,158 INFO    MainThread:6733 [wandb_run.py:_console_start():2504] atexit reg
+2025-11-21 18:03:00,158 INFO    MainThread:6733 [wandb_run.py:_redirect():2352] redirect: wrap_raw
+2025-11-21 18:03:00,158 INFO    MainThread:6733 [wandb_run.py:_redirect():2421] Wrapping output streams.
+2025-11-21 18:03:00,158 INFO    MainThread:6733 [wandb_run.py:_redirect():2444] Redirects installed.
+2025-11-21 18:03:00,161 INFO    MainThread:6733 [wandb_init.py:init():1080] run started, returning control to user process
+2025-11-21 18:03:25,144 INFO    wandb-AsyncioManager-main:6733 [service_client.py:_forward_responses():80] Reached EOF.
+2025-11-21 18:03:25,144 INFO    wandb-AsyncioManager-main:6733 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.
+2025-11-21 18:03:57,495 ERROR   wandb-AsyncioManager-main:6733 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/root/miniconda3/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/root/miniconda3/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-11-21 18:03:57,502 ERROR   wandb-AsyncioManager-main:6733 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/root/miniconda3/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/root/miniconda3/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-11-21 18:03:57,507 ERROR   wandb-AsyncioManager-main:6733 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/root/miniconda3/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/root/miniconda3/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-11-21 18:03:57,517 ERROR   wandb-AsyncioManager-main:6733 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/root/miniconda3/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/root/miniconda3/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-11-21 18:03:57,519 ERROR   wandb-AsyncioManager-main:6733 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/root/miniconda3/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/root/miniconda3/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost

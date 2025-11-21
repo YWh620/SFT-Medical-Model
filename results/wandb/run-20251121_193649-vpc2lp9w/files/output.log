@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/qwen3-48-lora/train.py", line 140, in <module>
+    train()
+  File "/root/autodl-tmp/qwen3-48-lora/train.py", line 71, in train
+    model = LoRAFTModel.from_pretrained(pretrained_model_name_or_path=base_model_name, lora_config=lora_config,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/qwen3-48-lora/model/model.py", line 76, in from_pretrained
+    return cls(pretrained_model_name_or_path=pretrained_model_name_or_path,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/qwen3-48-lora/model/model.py", line 29, in __init__
+    base_model = AutoModelForCausalLM.from_pretrained(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4971, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Qwen3ForCausalLM.__init__() got an unexpected keyword argument 'gradient_checkpointing'

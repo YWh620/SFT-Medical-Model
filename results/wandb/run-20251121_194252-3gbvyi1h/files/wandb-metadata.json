@@ -1,0 +1,36 @@
+{
+  "os": "Linux-5.15.0-119-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.12.3",
+  "startedAt": "2025-11-21T11:42:52.685219Z",
+  "program": "/root/autodl-tmp/qwen3-48-lora/train.py",
+  "codePath": "train.py",
+  "codePathLocal": "train.py",
+  "email": "927847561@qq.com",
+  "root": "/root/autodl-tmp/qwen3-48-lora",
+  "host": "autodl-container-fc7d419c28-ce017077",
+  "executable": "/root/autodl-tmp/qwen3-48-lora/.venv/bin/python3",
+  "cpu_count": 104,
+  "cpu_count_logical": 208,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "32212254720",
+      "used": "11608846336"
+    }
+  },
+  "memory": {
+    "total": "810154840064"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 5090",
+      "memoryTotal": "34190917632",
+      "cudaCores": 21760,
+      "architecture": "Blackwell",
+      "uuid": "GPU-5af9fe62-3194-aeb8-15bd-c91af14123e3"
+    }
+  ],
+  "cudaVersion": "13.0",
+  "writerId": "gjx3b3a1pi20n2n9nnp240ewblpefboq"
+}

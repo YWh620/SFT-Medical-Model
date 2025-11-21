@@ -1,0 +1,29 @@
+Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████| 3/3 [00:03<00:00,  1.22s/it]
+Map: 100%|████████████████████████████████████████████████████████████████████████████| 13125/13125 [00:26<00:00, 500.31 examples/s]
+Map: 100%|██████████████████████████████████████████████████████████████████████████████| 3282/3282 [00:06<00:00, 504.50 examples/s]
+  0%|                                                                                                      | 0/1232 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/torch/utils/checkpoint.py:85: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+Traceback (most recent call last):
+  File "/root/autodl-tmp/qwen3-48-lora/train.py", line 140, in <module>
+    train()
+  File "/root/autodl-tmp/qwen3-48-lora/train.py", line 129, in train
+    trainer.train()
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 2325, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 2674, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 4071, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/accelerate/accelerator.py", line 2740, in backward
+    loss.backward(**kwargs)
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/torch/_tensor.py", line 625, in backward
+    torch.autograd.backward(
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 354, in backward
+    _engine_run_backward(
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 841, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn

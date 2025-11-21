@@ -1,0 +1,15 @@
+{"time":"2025-11-21T16:28:34.988590503+08:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpxo1yriai/port-3205.txt","pid":3205,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-11-21T16:28:34.989273197+08:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":3205}
+{"time":"2025-11-21T16:28:34.989257664+08:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/tmp/wandb-3205-3240-3615478436/socket","Net":"unix"}}
+{"time":"2025-11-21T16:28:35.167280135+08:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2025-11-21T16:28:35.175262701+08:00","level":"INFO","msg":"handleInformInit: received","streamId":"nhyz7nwj","id":"1(@)"}
+{"time":"2025-11-21T16:28:35.945180896+08:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"nhyz7nwj","id":"1(@)"}
+{"time":"2025-11-21T16:29:22.107259621+08:00","level":"INFO","msg":"handleInformTeardown: server teardown initiated","id":"1(@)"}
+{"time":"2025-11-21T16:29:22.107359065+08:00","level":"INFO","msg":"server is shutting down"}
+{"time":"2025-11-21T16:29:22.107346413+08:00","level":"INFO","msg":"connection: closing","id":"1(@)"}
+{"time":"2025-11-21T16:29:22.107458157+08:00","level":"INFO","msg":"connection: closed successfully","id":"1(@)"}
+{"time":"2025-11-21T16:29:22.107507161+08:00","level":"INFO","msg":"server: listener closed","addr":{"Name":"/tmp/wandb-3205-3240-3615478436/socket","Net":"unix"}}
+{"time":"2025-11-21T16:29:22.198127789+08:00","level":"ERROR","msg":"processOutgoingData: flush error","error":"write unix /tmp/wandb-3205-3240-3615478436/socket->@: use of closed network connection","id":"1(@)"}
+{"time":"2025-11-21T16:29:39.544460073+08:00","level":"INFO","msg":"handleInformTeardown: server shutdown complete","id":"1(@)"}
+{"time":"2025-11-21T16:29:39.544495227+08:00","level":"INFO","msg":"connection: ManageConnectionData: connection closed","id":"1(@)"}
+{"time":"2025-11-21T16:29:39.544513704+08:00","level":"INFO","msg":"server is closed"}

@@ -1,0 +1,31 @@
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: e9505262-333a-4f84-b2fe-335af2c4c929)')' thrown while requesting HEAD https://huggingface.co/datasets/keivalya/MedQuad-MedicalQnADataset/resolve/main/README.md
+Retrying in 1s [Retry 1/5].
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 105a5b26-1130-4529-be4d-2df87ccd243a)')' thrown while requesting HEAD https://huggingface.co/datasets/keivalya/MedQuad-MedicalQnADataset/resolve/main/README.md
+Retrying in 2s [Retry 2/5].
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: eb04d181-b941-4a5a-a945-757ef1f9d6f4)')' thrown while requesting HEAD https://huggingface.co/datasets/keivalya/MedQuad-MedicalQnADataset/resolve/main/README.md
+Retrying in 4s [Retry 3/5].
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 9f815e90-1989-4545-9a07-2ed16000d6c4)')' thrown while requesting HEAD https://huggingface.co/datasets/keivalya/MedQuad-MedicalQnADataset/resolve/main/README.md
+Retrying in 8s [Retry 4/5].
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: b6998580-f2f1-4787-b8fd-af7e7c1d1f96)')' thrown while requesting HEAD https://huggingface.co/datasets/keivalya/MedQuad-MedicalQnADataset/resolve/main/README.md
+Retrying in 8s [Retry 5/5].
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 0fe52005-a3e2-481f-a76c-07603a80857f)')' thrown while requesting HEAD https://huggingface.co/datasets/keivalya/MedQuad-MedicalQnADataset/resolve/main/README.md
+Traceback (most recent call last):
+  File "/root/autodl-tmp/qwen3-48-lora/train.py", line 140, in <module>
+    train()
+  File "/root/autodl-tmp/qwen3-48-lora/train.py", line 49, in train
+    dataset = load_and_templated_qa_data(dataset_name, split="train")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/qwen3-48-lora/data/data_process.py", line 8, in load_and_templated_qa_data
+    dataset = datasets.load_dataset(dataset_name, split=split)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/datasets/load.py", line 1397, in load_dataset
+    builder_instance = load_dataset_builder(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/datasets/load.py", line 1137, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/datasets/load.py", line 1036, in dataset_module_factory
+    raise e1 from None
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/datasets/load.py", line 956, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({e.__class__.__name__})") from e
+ConnectionError: Couldn't reach 'keivalya/MedQuad-MedicalQnADataset' on the Hub (LocalEntryNotFoundError)

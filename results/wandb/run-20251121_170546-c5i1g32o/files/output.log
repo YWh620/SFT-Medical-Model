@@ -1,0 +1,17 @@
+Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████| 3/3 [00:03<00:00,  1.10s/it]
+Map: 100%|████████████████████████████████████████████████████████████████████████████| 13125/13125 [00:26<00:00, 495.99 examples/s]
+Map: 100%|██████████████████████████████████████████████████████████████████████████████| 3282/3282 [00:06<00:00, 493.97 examples/s]
+Traceback (most recent call last):
+  File "/root/autodl-tmp/qwen3-48-lora/train.py", line 140, in <module>
+    train()
+  File "/root/autodl-tmp/qwen3-48-lora/train.py", line 129, in train
+    trainer.train()
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 2325, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 2447, in _inner_training_loop
+    self.model.gradient_checkpointing_enable(gradient_checkpointing_kwargs=args.gradient_checkpointing_kwargs)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/qwen3-48-lora/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1964, in __getattr__
+    raise AttributeError(
+AttributeError: 'LoRAFTModel' object has no attribute 'gradient_checkpointing_enable'

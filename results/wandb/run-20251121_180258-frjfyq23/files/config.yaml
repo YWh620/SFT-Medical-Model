@@ -1,0 +1,57 @@
+_wandb:
+    value:
+        cli_version: 0.23.0
+        e:
+            abnbon7bw50ivq25vz9ged09i0zx9lc5:
+                codePath: train.py
+                codePathLocal: train.py
+                cpu_count: 104
+                cpu_count_logical: 208
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "32212254720"
+                        used: "7513903104"
+                email: 927847561@qq.com
+                executable: /root/autodl-tmp/qwen3-48-lora/.venv/bin/python3
+                gpu: NVIDIA GeForce RTX 5090
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Blackwell
+                      cudaCores: 21760
+                      memoryTotal: "34190917632"
+                      name: NVIDIA GeForce RTX 5090
+                      uuid: GPU-5af9fe62-3194-aeb8-15bd-c91af14123e3
+                host: autodl-container-fc7d419c28-ce017077
+                memory:
+                    total: "810154840064"
+                os: Linux-5.15.0-119-generic-x86_64-with-glibc2.35
+                program: /root/autodl-tmp/qwen3-48-lora/train.py
+                python: CPython 3.12.3
+                root: /root/autodl-tmp/qwen3-48-lora
+                startedAt: "2025-11-21T10:02:58.460862Z"
+                writerId: abnbon7bw50ivq25vz9ged09i0zx9lc5
+        m: []
+        python_version: 3.12.3
+        t:
+            "1":
+                - 1
+                - 11
+                - 49
+                - 51
+                - 71
+                - 98
+            "2":
+                - 1
+                - 11
+                - 49
+                - 51
+                - 71
+                - 98
+            "3":
+                - 13
+            "4": 3.12.3
+            "5": 0.23.0
+            "6": 4.55.1
+            "12": 0.23.0
+            "13": linux-x86_64
